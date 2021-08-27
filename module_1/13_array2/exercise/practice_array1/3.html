@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 3</title>
+</head>
+<body>
+    <script>
+        let numbers = [5, 13, 6, 3, 10, 18, 2, 25, 9, 11];
+        let max = numbers[1];
+        let total = 0;
+        for (let i = 0; i <= numbers.length; i++) {
+        if (numbers[i] >= max) {
+            max = numbers[i];
+        }
+    }      
+        for(let i = 0; i < numbers.length; i++){
+            total = total + numbers[i];
+        }
+        let average = total / numbers.length;
+        alert("Phần tử có giá trị lớn nhất trong mảng là " + max + " và giá trị trung bình của các phần tử trong mảng là " + average);
+    </script>
+</body>
+</html>
